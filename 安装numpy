@@ -1,0 +1,6 @@
+numpy现在只发布到针对Python2.6.X
+需要安装numpy 
+apt-get install python-numpy
+
+另：
+apt-get install python-scipy
