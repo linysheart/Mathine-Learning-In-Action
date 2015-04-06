@@ -4,3 +4,26 @@ apt-get install python-numpy
 
 另：
 apt-get install python-scipy
+
+安装matplotlib相对复杂一些
+需要先安装其依赖的包libpng和freetype
+安装libpng:
+
+sudo apt-get install libpng-dev
+安装freetype:
+
+cd ~/Downloads
+wget http://download.savannah.gnu.org/releases/freetype/freetype-2.4.10.tar.gz
+tar zxvf freetype-2.4.10.tar.gz
+cd freetype-2.4.10/
+./congfigure
+make
+sudo make install
+安装pip，然后通过pip来安装matplotlib: 
+sudo apt-get install python-pip
+
+安装好pip后就可以用下面的命令来查找matplotlib和查看其安装状态
+sudo pip search matplotlib
+
+安装matplotlib
+sudo pip install matplotlib
